@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaGazeta3D - Enlaces oficiales</title>
+    <!-- Tipografía premium y limpia -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --naranja: #F19220;
+            --azul: #507CBE;
+            --morado: #5D237A;
+            --oscuro: #1A1A1A;
+            --blanco: #FFFFFF;
+            --gris-fondo: #F8F9FA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--gris-fondo);
+            color: var(--oscuro);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        .portfolio-card {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            background: var(--blanco);
+            padding: 40px 24px;
+            border-radius: 32px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Identidad Visual */
+        .header-brand {
+            margin-bottom: 35px;
+        }
+
+        .logo-text {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 6px;
+        }
+
+        .logo-text span {
+            color: var(--morado);
+        }
+
+        .slogan {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+        }
+
+        /* Contenedor de Botones */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* Estilo de los Botones Base */
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 18px 24px;
+            text-decoration: none;
+            color: var(--blanco);
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 16px;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Efectos de animación al pasar el mouse */
+        .btn-link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+            filter: brightness(1.05);
+        }
+
+        /* Botón Destacado: Catálogo 3D con efecto de llamado a la acción */
+        .btn-catalogo {
+            background-color: var(--naranja);
+            font-weight: 700;
+            animation: pulseEffect 2s infinite;
+        }
+
+        /* Animación de pulso suave para el catálogo */
+        @keyframes pulseEffect {
+            0% {
+                box-shadow: 0 0 0 0 rgba(241, 146, 32, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 12px rgba(241, 146, 32, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(241, 146, 32, 0);
+            }
+        }
+
+        .btn-instagram {
+            background-color: var(--morado);
+        }
+
+        .btn-facebook {
+            background-color: var(--azul);
+        }
+
+        .btn-mail {
+            background-color: var(--morado);
+        }
+
+        /* Footer */
+        .footer-text {
+            margin-top: 45px;
+            font-size: 0.75rem;
+            color: #999;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portfolio-card">
+        
+        <!-- Encabezado Principal -->
+        <div class="header-brand">
+            <h1 class="logo-text">LaGazeta<span>3D</span></h1>
+            <p class="slogan">Vos lo pensás, nosotros lo creamos</p>
+        </div>
+
+        <!-- Enlaces Principales -->
+        <div class="links-container">
+            
+            <!-- REEMPLAZA EL 'https://drive.google.com/drive/folders/1tFc-zUFmr1VjjmgQB52LJi4R1UNzsCqK?usp=drive_link' CON EL LINK DE TU CATÁLOGO -->
+            <a href="https://drive.google.com/drive/folders/1tFc-zUFmr1VjjmgQB52LJi4R1UNzsCqK?usp=drive_link" target="_blank" class="btn-link btn-catalogo">
+                🚀 Catálogo 3D
+            </a>
+            
+            <!-- REEMPLAZA EL 'https://www.instagram.com/lagazeta3d/' CON EL LINK DE TU INSTAGRAM -->
+            <a href="https://www.instagram.com/lagazeta3d/" target="_blank" class="btn-link btn-instagram">
+                📸 Instagram
+            </a>
+            
+            <!-- REEMPLAZA EL 'https://www.facebook.com/profile.php?id=61595671657888' CON EL LINK DE TU FACEBOOK -->
+            <a href="https://www.facebook.com/profile.php?id=61595671657888" target="_blank" class="btn-link btn-facebook">
+                🔵 Facebook
+            </a>
+
+            <!-- Botón de Mail directo -->
+            <a href="mailto:lagazeta3d@gmail.com" class="btn-link btn-mail">
+                ✉️ lagazeta@gmail.com
+            </a>
+            
+        </div>
+
+        <!-- Pie de página -->
+        <div class="footer-text">
+            © 2026 LaGazeta3D
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
